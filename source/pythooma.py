@@ -8,11 +8,6 @@ import pwns
 utilities.clear()
 utilities.print_title()
 
-# if osdetect.get_euid()==0:
-#     print("\nUSR:\t\troot")
-# else:
-#     print("Run as root!")
-#     exit(0)
 osdetect.get_cpu()
 print("<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>=")
 

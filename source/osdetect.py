@@ -2,18 +2,11 @@ import os
 import platform
 import psutil
 
-# def get_euid():
-#     try:
-#         return os.geteuid()
-#     except:
-#         return 
-
 def get_cpu():
     uname = platform.uname()
-    print(f"\nSystem:\t\t"+uname.system)
-    print(f"Name:\t\t"+uname.node.upper())
+    print(f"\nName:\t\t"+uname.node.upper())
+    print(f"System:\t\t"+uname.system)
     print(f"Release:\t"+uname.release)
-    print(f"Version:\t"+uname.version)
     print(f"Machine:\t"+uname.machine)
     #CPU cores
     print("Phy Cores:\t" + str(psutil.cpu_count(logical=False)))
