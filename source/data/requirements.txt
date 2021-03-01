@@ -1,0 +1,4 @@
+psutil
+playsound
+cx_Freeze
+pillow
